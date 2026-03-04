@@ -1,0 +1,143 @@
+.wpsd-app{
+max-width:1100px;
+}
+.wpsd-container{
+max-width:1200px;
+}
+.wpsd-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+.wpsd-brand{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.wpsd-logo{
+font-size:32px;
+background:#ffffff;
+color:#fff;
+padding:10px 14px;
+border-radius:100px;
+size: 200px;
+}
+
+.wpsd-title h1{
+margin:0;
+font-size:35px;
+font-weight:600;
+}
+
+/* Subtitle */
+.wpsd-title p{
+margin:3px 0 0;
+color:#666;
+font-size:18px;
+}
+.wpsd-version{
+background:#eef2ff;
+padding:6px 12px;
+border-radius:6px;
+font-size:12px;
+}
+
+.wpsd-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.wpsd-card{
+background:#fff;
+border-radius:12px;
+padding:25px;
+box-shadow:0 4px 14px rgba(0,0,0,0.06);
+transition:.2s;
+line-height: 1.3;
+}
+
+.wpsd-card:hover{
+transform:translateY(-3px);
+}
+
+.wpsd-card-title{
+font-size:13px;
+color:#666;
+}
+
+.wpsd-number{
+font-size:30px;
+font-weight:700;
+margin-top:8px;
+}
+
+.wpsd-label{
+font-size:12px;
+color:#888;
+margin-top:8px;
+}
+
+.wpsd-actions{
+margin-top:20px;
+display:flex;
+gap:15px;
+}
+
+.wpsd-btn-primary{
+background:#6c63ff;
+color:#fff;
+border:none;
+padding:10px 18px;
+border-radius:6px;
+cursor:pointer;
+font-weight:600;
+}
+
+.wpsd-btn{
+background:#6c63ff;
+color:#fff;
+border:none;
+padding:10px 18px;
+border-radius:6px;
+cursor:pointer;
+font-weight:600;
+}
+
+#wpsd-result{
+margin-top:20px;
+background:#fff;
+padding:15px;
+border-radius:8px;
+width: 310px;
+}
+#wpsd-fix{
+background:#6c5ce7;
+border:none;
+padding:10px 16px;
+}
+
+#wpsd-fix-result{
+margin-top:10px;
+font-weight:500;
+}
+/* Responsive Fix for 2026 */
+@media (max-width: 900px) {
+    .wpsd-grid {
+        grid-template-columns: 1fr 1fr; /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .wpsd-grid {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+    .wpsd-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
